@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Authentification</title>	
+	<link rel="stylesheet" type="text/css" href="style/monstyle.css" />
+		<script type="text/javascript">
+	
+function validate(){
+var login = document.forms["form"]["login"];
+var pass = document.forms["form"]["pwd"];
+
+if(login.value =="" || pass.value =="")
+{
+alert ("Vous avez oubli√© de saisir un champ!"); 
+window.location = "compte.html";// Redirecting to other page.
+nom.focus();
+
+return false;
+
+}
+else 
+return true;
+
+}
+
+
+</script>
+</head>
+
+<body>
+	<!--Espace rÈserver ‡ l'entÍte -->
+<div class="banniere">
+ <img src="images/banniere.png" alt="MON SITE DE PHOTOS" title="Bienvenue sur le site d'astronomie" width="800" height="100" />
+</div>
+	<!-- Espace rÈserver au menu -->
+<div id="top_menu">
+  <ul>
+    <li><a href="index.html" title="Bienvenue" >Accueil</a></li>
+    <li><a href="album.html" title="PHOTOS" >Photos</a></li>
+    <li><a href="telechargement.html" title="Telechargement" >Telechargements</a></li>
+	<li><a href="video.html" title="Video" >Videos</a></li>
+	<li id="actif"><a href="compte.html" title="Video" >Mon compte</a></li>
+	<li><a href="carte_ciel.html" title="Video" >Carte du Ciel</a></li>
+    <li><a href="formulaire.html" title="Pour me joindre" >Contact</a></li>
+    <li><a href="plan.html" title="plan du site" >Plan du site</a></li>
+  </ul>
+</div>
+
+	<br/><br/>
+	<div id="corps">
+	<p class="texte-rouge">Veuillez saisir vote login et votre mot de passe:<p>
+	
+	<div class="global">
+	
+	<table>
+	<tr>
+	<td>
+		<form action="auth.php" method="GET" name="form" enctype="text/plain" onsubmit="return validate()" >
+			<label for id="nom">login         :</label></td><td> <input type="text" name="login" />
+	</td>
+</tr><tr>	<td>
+			<label for id="pass">mot de passe : </label></td><td><input type="password" name="pwd"  />
+			</td>
+			</tr>
+			<tr><td class="sous-titre"></td><td></td></tr>
+			<tr>
+			
+			<td ></td><td>
+			<input type="reset" name="reset" value="Effacer" />
+			<input type="submit" name="submit" value="Valider" /></td>
+			</tr>
+		</form>
+		</table>
+		</div>
+	</div>
+	
+	
+	<div id="pied_de_page">
+	<div id='gauche'>
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+		</a>
+		</div>
+			Copyright Vannes
+	</div>
+</body>
+
+
+</html>

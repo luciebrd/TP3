@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Photos et téléchargements</title>	
+	<link rel="stylesheet" type="text/css" href="style/monstyle.css" />
+
+
+  <link href="style/video-js.css" rel="stylesheet">
+  <link href="style/videojs-playlist-ui.css" rel="stylesheet">
+  <link href="style/videojs.css" rel="stylesheet">
+
+	  <script src="js/video.js"></script>
+  <script src="js/videojs-playlist.js"></script>
+  <script src="js/videojs-playlist-ui.js"></script>
+	
+ <!-- <script src="https://unpkg.com/@videojs/http-streaming@0.9.0/dist/videojs-http-streaming.js"></script> -->
+</head>
+
+<body>
+	<!--Espace réserver à l'entête -->
+<div class="banniere">
+ <img src="images/banniere.png" alt="Mon site d'astronomie" title="Bienvenue sur le site d'astronomie" width="800" height="100" />
+</div>
+	<!-- Espace réserver au menu -->
+<div id="top_menu">
+  <ul>
+    <li id="actif"><a href="index.html" title="Bienvenue" >Accueil</a></li>
+    <li><a href="album.html" title="PHOTOS" >Photos</a></li>
+    <li><a href="telechargement.html" title="Telechargement" >Telechargements</a></li>
+	<li><a href="video.html" title="Video" >Videos</a></li>
+	<li><a href="compte.html" title="Video" >Mon compte</a></li>
+	<li><a href="carte_ciel.html" title="Video" >Carte du Ciel</a></li>
+    <li><a href="formulaire.html" title="Pour me joindre" >Contact</a></li>
+    <li><a href="plan.html" title="plan du site" >Plan du site</a></li>
+  </ul>
+</div>
+
+<br/>
+	
+	<div id="corps">
+	<br/>
+		<p>Bienvenue sur ce site d'astronome!</p>
+		<br/>
+
+
+<!--  <video-js id=vid1 width=600 height=300 class="vjs-default-skin" controls>
+  <source
+     src="http://iphone-streaming.ustream.tv/uhls/6540154/streams/live/iphone/playlist.m3u8"
+     type="application/x-mpegURL">
+</video-js>
+<script src="video.js"></script>
+<script src="videojs-http-streaming.min.js"></script>
+
+<script>
+var player = videojs('vid1');
+player.play();
+</script> -->
+<iframe src="https://www.lizard-tail.com/isana/tracking/" scrolling="no" style="border: 0px none transparent;" width="790" height="400" frameborder="0">    </iframe>
+
+<br/>
+<iframe width="390" height="200" src="https://ustream.tv/embed/17074538?html5ui=1&autoplay=true" scrolling="no" allow="fullscreen" webkitallowfullscreen  frameborder="0" style="border: 0 none transparent;"></iframe>
+<iframe  width="390" height="200" src="https://ustream.tv/embed/9408562?html5ui=1&autoplay=true" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+<br/>
+
+<br/>
+ <div class="player-container">
+    <video
+      id="video"
+      class="video-js"
+      height="300"
+      width="500"
+      controls>
+      <source src='https://cdn.spacetelescope.org/archives/videos/medium_podcast/heic2021a.mp4' type="video/mp4">
+    </video>
+
+    <div class="vjs-playlist">
+      <!--
+        The contents of this element will be filled based on the
+        currently loaded playlist
+      -->
+    </div>
+  </div>
+<script type="text/javascript">
+    var player = videojs('video');
+
+    player.playlist([{
+      name: 'Huble',
+      duration: 105,
+      sources: [
+        { src: 'https://cdn.spacetelescope.org/archives/videos/medium_podcast/heic2021a.mp4', type: 'video/mp4' },
+      ],
+
+    },
+    {
+      name: 'Explosion d\'une supernova',
+      duration: 30,
+      sources: [
+        { src: 'https://cdn.spacetelescope.org/archives/videos/dome_preview/supernova_explosion_fd.mp4', type: 'video/mp4' },
+      ],
+
+    },
+  {
+      name: 'Zoom sur ngc 4993',
+	  duration: 58,
+      sources: [
+        { src: 'https://cdn.spacetelescope.org/archives/videos/medium_podcast/heic1717c.mp4', type: 'video/mp4' },
+       
+      ],
+      thumbnail: false
+    },
+
+   ]);
+
+    // Initialize the playlist-ui plugin with no option (i.e. the defaults).
+    player.playlistUi();
+  </script>
+
+
+<iframe src="https://esamultimedia.esa.int/multimedia/virtual-tour-iss/" scrolling="no" style="border: 0px none transparent;" allowfullscreen webkitallowfullscreen width="790" height="400" frameborder="0">    </iframe>
+
+	<br/><br/>
+
+
+
+
+
+
+  
+  
+
+<br/>
+
+
+	</div>
+	
+</div>
+	
+	<div id="pied_de_page">
+	
+	<div id='gauche'>
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+		</a>
+		</div>
+		<br />
+		Copyright Vannes
+
+		
+	</div>
+</body>
+
+
+</html>
