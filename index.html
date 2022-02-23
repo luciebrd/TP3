@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html >
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
@@ -12,32 +12,60 @@
   <link href="style/video-js.css" rel="stylesheet">
   <link href="style/videojs-playlist-ui.css" rel="stylesheet">
   <link href="style/videojs.css" rel="stylesheet">
+  <link href="style/bootstrap.css" rel="stylesheet">
 
 	  <script src="js/video.js"></script>
   <script src="js/videojs-playlist.js"></script>
   <script src="js/videojs-playlist-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 	
  <!-- <script src="https://unpkg.com/@videojs/http-streaming@0.9.0/dist/videojs-http-streaming.js"></script> -->
 </head>
 
 <body>
-	<!--Espace réserver à l'entête -->
-<div class="banniere">
- <img src="images/banniere.png" alt="Mon site d'astronomie" title="Bienvenue sur le site d'astronomie" width="800" height="100" />
-</div>
+	<!--Espace réserver à l'entête / bannière-->
 	<!-- Espace réserver au menu -->
-<div id="top_menu">
-  <ul>
-    <li id="actif"><a href="index.html" title="Bienvenue" >Accueil</a></li>
-    <li><a href="album.html" title="PHOTOS" >Photos</a></li>
-    <li><a href="telechargement.html" title="Telechargement" >Telechargements</a></li>
-	<li><a href="video.html" title="Video" >Videos</a></li>
-	<li><a href="compte.html" title="Video" >Mon compte</a></li>
-	<li><a href="carte_ciel.html" title="Video" >Carte du Ciel</a></li>
-    <li><a href="formulaire.html" title="Pour me joindre" >Contact</a></li>
-    <li><a href="plan.html" title="plan du site" >Plan du site</a></li>
-  </ul>
-</div>
+<!-- menu responsive-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Accueil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="telechargement.html">Telechargement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="compte.html">Mon compte</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Visuels
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="album.html">Photo</a></li>
+            <li><a class="dropdown-item" href="video.html">Vidéo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="carte_ciel.html">Carte du ciel</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formulaire.html">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="plan.html">Plan du site</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
 <br/>
 	
@@ -45,6 +73,33 @@
 	<br/>
 		<p>Bienvenue sur ce site d'astronome!</p>
 		<br/>
+<!--carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel1.jpg" class="d-block w-100" alt="..." width="100%">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel2.jpg" class="d-block w-100" alt="..." width="100%">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel3.jpg" class="d-block w-100" alt="..." width="100%">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
 
 <!--  <video-js id=vid1 width=600 height=300 class="vjs-default-skin" controls>
@@ -138,19 +193,24 @@ player.play();
 	</div>
 	
 </div>
-	
-	<div id="pied_de_page">
-	
-	<div id='gauche'>
-		<a href="http://validator.w3.org/check?uri=referer">
-		<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
-		</a>
-		</div>
-		<br />
-		Copyright Vannes
+<div class="card text-center">
+  <div class="card-header">
+    Accueil
+    ISS
+    Nasa
+    FAQ
+    A Propos
 
-		
-	</div>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">@ 2021 Copyright Vannes</h5>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>
+
+	
+
 </body>
 
 
