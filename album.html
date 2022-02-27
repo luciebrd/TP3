@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
@@ -8,27 +7,56 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Album Photos</title>	
 	<link rel="stylesheet" type="text/css" href="style/monstyle.css" />
+	<link href="style/bootstrap.css" rel="stylesheet">
+
+	<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<div class="banniere">
- <img src="images/banniere.png" alt="MON SITE DE PHOTOS" title="Bienvenue sur le site d'astronomie" width="800" height="100" />
-</div>
-	<!-- Espace réserver au menu -->
-<div id="top_menu">
-  <ul>
-    <li><a href="index.html" title="Bienvenue" >Accueil</a></li>
-    <li id="actif"><a href="album.html" title="PHOTOS" >Photos</a></li>
-    <li><a href="telechargement.html" title="Telechargement" >Telechargements</a></li>
-		<li><a href="video.html" title="Video" >Videos</a></li>
-	<li><a href="compte.html" title="Video" >Mon compte</a></li>
-	<li><a href="carte_ciel.html" title="Video" >Carte du Ciel</a></li>
-    <li><a href="formulaire.html" title="Pour me joindre" >Contact</a></li>
-    <li><a href="plan.html" title="plan du site" >Plan du site</a></li>
-  </ul>
-</div>
 
-	<div id="corps" >
+	<!-- Espace réserver au menu -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="index.html">Accueil</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="telechargement.html">Telechargement</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="compte.html">Mon compte</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Visuels
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <li><a class="dropdown-item" href="album.html">Photo</a></li>
+				  <li><a class="dropdown-item" href="video.html">Vidéo</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <li><a class="dropdown-item" href="carte_ciel.html">Carte du ciel</a></li>
+				</ul>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="formulaire.html">Contact</a>
+			  </li>
+			  
+			  <li class="nav-item">
+				<a class="nav-link" href="plan.html">Plan du site</a>
+			  </li>
+			</ul>
+			<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
+
+	<!--<div id="corps" >
 	<div id="cadre_photo">
 		<div class="cadre1photo">
 			<div class="cadre_entete">photo #1</div>
@@ -158,19 +186,154 @@
 	
 	</div>
 	
-	</div>
-	
-	
-	
-	<div id="pied_de_page">
-	<div id='gauche'>
-		<a href="http://validator.w3.org/check?uri=referer">
-		<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
-		</a>
-		</div>
-		Copyright Vannes
+	</div>-->
 
-	</div>
+	
+	<div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/neptune.jpg" alt="images de Neptune">
+                <div class="card-body">
+                  <p class="card-text">Neptune est la huitième planète par ordre d'éloignement au Soleil et la plus éloignée connue du Système solaire.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" > View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/jupiter.jpg" alt="image de jupiter">
+                <div class="card-body">
+                  <p class="card-text">Jupiter est la cinquième planète du Système solaire par ordre d'éloignement au Soleil, et la plus grande par la taille et la masse devant Saturne, qui est comme elle une planète géante gazeuse.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/pluton.jpg" alt="image de pluton">
+                <div class="card-body">
+                  <p class="card-text">A sa découverte par Clyde Tombaugh en 1930, Pluton a été considérée comme la neuvième planète du Système solaire. Mais, dès la fin du XXe siècle, d'autres objets assez similaires ont été découverts, dont notamment Eris, qui le dépassait légèrement en taille.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/saturne.jpg" alt="image de saturne">
+                <div class="card-body">
+                  <p class="card-text">Saturne est la sixième planète du Système solaire par ordre d'éloignement au Soleil, et la deuxième plus grande par la taille et la masse de Jupiter, qui est comme elle une planète géante gazeuse. Son rayon moyen de 58 232 km est environ neuf fois et demi celui de la Terre.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/mercure.jpg" alt="image de mercure">
+                <div class="card-body">
+                  <p class="card-text">Mercure est la planète la plus proche du Soleil et la moins massive du Système solaire. Son éloignement au Soleil est compris entre 0.31 et 0.47 unité astronomique (soit 46 et 70 millions de kilomètres), ce qui correspond à une excentricité orbitale de 0.2.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/copernicus.jpg" alt="Copernicus">
+                <div class="card-body">
+                  <p class="card-text">Copernicus (anciennement GMES acronyme de Global Monitoring for Environment and Security) est un programme de l'Union européenne qui collecte et restitue des données de qualité et actualisées de manière continue portant sur l'état de la Terre.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/lune.jpg" alt="image de la lune">
+                <div class="card-body">
+                  <p class="card-text">La Lune effectue une rotation autour de la Terre en 29.5 jour(Période synodique). La rotation de la Lune sur elle-même, qui est de 27.32 jours, est sensiblement la même.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/neptune2.jpg" alt="neptune ">
+                <div class="card-body">
+                  <p class="card-text">Neptune est la huitième planète par ordre d'éloignement au Soleil et la plus éloignée connue du Système solaire.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/jupiter2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Saturne est la sixième planète du Système solaire par ordre d'éloignement au Soleil, et la deuxième plus grande par la taille et la masse après Jupiter, qui est comme elle une planète gazeuse.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	
+
+	<div class="card text-center">
+		<div class="card-header">
+		  <a href="index.html">Accueil</a>
+		  <a href="https://iss.cnes.fr/fr/">ISS</a>
+		  <a href="https://www.nasa.gov/">Nasa</a>
+		  <a>FAQ</a>
+		  <a href="formulaire.html">A Propos</a>
+	  
+		</div>
+		<div class="card-body">
+		  <h5 class="card-title">@ 2021 Copyright Vannes</h5>
+		</div>
+		<div class="card-footer text-muted">
+		</div>
+	  </div>
+	  
 </body>
 
 

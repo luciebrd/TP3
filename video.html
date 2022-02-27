@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html >
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
@@ -7,15 +7,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Vid√©os</title>	
 <link rel="stylesheet" type="text/css" href="style/monstyle.css" />
+<link href="style/bootstrap.css" rel="stylesheet">
+
+<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<!--Espace rÈserver ‡ l'entÍte -->
-<div class="banniere">
- <img src="images/banniere.png" alt="MON SITE DE PHOTOS" title="Bienvenue sur le site d'astronomie" width="800" height="100" />
-</div>
-	<!-- Espace rÈserver au menu -->
-<div id="top_menu">
+	<!--Espace rÔøΩserver ÔøΩ l'entÔøΩte -->
+	<!-- Espace rÔøΩserver au menu -->
+<!--<div id="top_menu">
   <ul>
     <li><a href="index.html" title="Bienvenue" >Accueil</a></li>
     <li><a href="album.html" title="PHOTOS" >Photos</a></li>
@@ -26,7 +26,47 @@
     <li><a href="formulaire.html" title="Pour me joindre" >Contact</a></li>
     <li><a href="plan.html" title="plan du site" >Plan du site</a></li>
   </ul>
-</div>
+</div>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="index.html">Accueil</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="telechargement.html">Telechargement</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="compte.html">Mon compte</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Visuels
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <li><a class="dropdown-item" href="album.html">Photo</a></li>
+			  <li><a class="dropdown-item" href="video.html">Vid√©o</a></li>
+			  <li><hr class="dropdown-divider"></li>
+			  <li><a class="dropdown-item" href="carte_ciel.html">Carte du ciel</a></li>
+			</ul>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="formulaire.html">Contact</a>
+		  </li>
+		  
+		  <li class="nav-item">
+			<a class="nav-link" href="plan.html">Plan du site</a>
+		  </li>
+		</ul>
+		<form class="d-flex">
+		  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		  <button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	  </div>
+	</div>
+  </nav>
 
 <br/>
 	
@@ -108,20 +148,26 @@
 	</tr>
 	</table>
 	</div>
-	
-	
-	<div id="pied_de_page">
-	
-	<div id='gauche'>
-		<a href="http://validator.w3.org/check?uri=referer">
-		<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
-		</a>
-		</div>
-		<br />
-		Copyright Vannes
 
-		
-	</div>
+
+	
+
+	<div class="card text-center">
+		<div class="card-header">
+		  <a href="index.html">Accueil</a>
+		  <a href="https://iss.cnes.fr/fr/">ISS</a>
+		  <a href="https://www.nasa.gov/">Nasa</a>
+		  <a>FAQ</a>
+		  <a href="formulaire.html">A Propos</a>
+	  
+		</div>
+		<div class="card-body">
+		  <h5 class="card-title">@ 2021 Copyright Vannes</h5>
+		</div>
+		<div class="card-footer text-muted">
+		</div>
+	  </div>
+	  
 </body>
 
 
