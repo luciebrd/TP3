@@ -5,28 +5,55 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; "/>
-	<title>Téléchargements</title>	
+	<title>TÃ©lÃ©chargements</title>	
 	<link rel="stylesheet" type="text/css" href="style/monstyle.css" />
+	<link href="style/bootstrap.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<!--Espace réserver à l'entête -->
-<div class="banniere">
- <img src="images/banniere.png" alt="MON SITE DE PHOTOS" title="Bienvenue sur le site d'astronomie" width="800" height="100" />
-</div>
-	<!-- Espace réserver au menu -->
-<div id="top_menu">
-  <ul>
-    <li><a href="index.html" title="Bienvenue" >Accueil</a></li>
-    <li><a href="album.html" title="PHOTOS" >Photos</a></li>
-    <li id="actif"><a href="telechargement.html" title="Telechargement" >Telechargements</a></li>
-		<li><a href="video.html" title="Video" >Videos</a></li>
-	<li><a href="compte.html" title="Video" >Mon compte</a></li>
-	<li><a href="carte_ciel.html" title="Video" >Carte du Ciel</a></li>
-    <li><a href="formulaire.html" title="Pour me joindre" >Contact</a></li>
-    <li><a href="plan.html" title="plan du site" >Plan du site</a></li>
-  </ul>
-</div>
+	<!--Espace rï¿½server ï¿½ l'entï¿½te -->
+	<!-- Espace rï¿½server au menu -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="index.html">Accueil</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="telechargement.html">Telechargement</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="compte.html">Mon compte</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Visuels
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <li><a class="dropdown-item" href="album.html">Photo</a></li>
+				  <li><a class="dropdown-item" href="video.html">VidÃ©o</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <li><a class="dropdown-item" href="carte_ciel.html">Carte du ciel</a></li>
+				</ul>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="formulaire.html">Contact</a>
+			  </li>
+			  
+			  <li class="nav-item">
+				<a class="nav-link" href="plan.html">Plan du site</a>
+			  </li>
+			</ul>
+			<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
 
 <br/>
 	
@@ -34,26 +61,29 @@
 		<p>Rubrique telechargement</p>
 	 <ul>
     <li><a href="telechargement/PlanetAnim.exe" title="Animation 3D" >Animation des planetes en 3D</a></li>
-	<p>Une petite animation qui met en place les planètes du système solaire. Les planètes sont entièrement texturées et animées, et on peut arrêter/redémarrer l'animation, afficher ou masquer les étoiles, afficher ou masquer les informations, et enfin choisir entre une interface en français ou en anglais. Les sources permettent d'ajouter facilement d'autres langues...</p>
+	<p>Une petite animation qui met en place les planetes du systeme solaire. Les planetes sont entierement texturees et animees, et on peut arreter/redemarrer l'animation, afficher ou masquer les etoiles, afficher ou masquer les informations, et enfin choisir entre une interface en franÃ§ais ou en anglais. Les sources permettent d'ajouter facilement d'autres langues...</p>
     <br/><br/>
 	<li><a href="telechargement/orbit.exe" title="Programme calcul" >Programme de calcul d'elements orbitaux</a></li>
-<p>Le logiciel Orbit 2.1 permet de calculer les éléments orbitaux des corps ayant une orbite autour du Soleil. La méthode de Gauss générale est utilisée pour établir une orbite préliminaire. Il dresse ensuite une éphéméride et calcule les écarts observation-calcul. Ces écarts peuvent être minimisés par la méthode des moindres carrés, afin que l'orbite satisfasse le mieux possible l'ensemble des observations. Cet ajustement permet notamment de prendre en compte l'influence gravitationnelle des planètes. Une fois l'orbite finale obtenue, il est possible d'enregistrer les éléments orbitaux dans un fichier texte et de dresser une éphéméride du corps.</p>	
+<p>Le logiciel Orbit 2.1 permet de calculer les elements orbitaux des corps ayant une orbite autour du Soleil. La methode de Gauss generale est utilisee pour etablir une orbite preliminaire. Il dresse ensuite une ephemeride et calcule les ecarts observation-calcul. Ces ecarts peuvent etre minimises par la methode des moindres carres, afin que l'orbite satisfasse le mieux possible l'ensemble des observations. Cet ajustement permet notamment de prendre en compte l'influence gravitationnelle des planetes. Une fois l'orbite finale obtenue, il est possible d'enregistrer les elements orbitaux dans un fichier texte et de dresser une ephemeride du corps.</p>	
 	</ul>
 	</div>
 	
 	
-	<div id="pied_de_page">
-	
-	<div id='gauche'>
-		<a href="http://validator.w3.org/check?uri=referer">
-		<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
-		</a>
+	<div class="card text-center">
+		<div class="card-header">
+		  <a href="index.html">Accueil</a>
+		  <a href="https://iss.cnes.fr/fr/">ISS</a>
+		  <a href="https://www.nasa.gov/">Nasa</a>
+		  <a>FAQ</a>
+		  <a href="formulaire.html">A Propos</a>
+	  
 		</div>
-		<br />
-		Copyright Vannes
-
-		
-	</div>
+		<div class="card-body">
+		  <h5 class="card-title">@ 2021 Copyright Vannes</h5>
+		</div>
+		<div class="card-footer text-muted">
+		</div>
+	  </div>
 </body>
 
 
